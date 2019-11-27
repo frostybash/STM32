@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"mco2\startup_stm32f103xb.o"
+"mco2\main.o"
+"mco2\stm32f1xx_it.o"
+"mco2\stm32f1xx_hal_msp.o"
+"mco2\stm32f1xx_hal_gpio_ex.o"
+"mco2\stm32f1xx_hal_spi.o"
+"mco2\stm32f1xx_hal_spi_ex.o"
+"mco2\stm32f1xx_hal_tim.o"
+"mco2\stm32f1xx_hal_tim_ex.o"
+"mco2\stm32f1xx_hal.o"
+"mco2\stm32f1xx_hal_rcc.o"
+"mco2\stm32f1xx_hal_rcc_ex.o"
+"mco2\stm32f1xx_hal_gpio.o"
+"mco2\stm32f1xx_hal_dma.o"
+"mco2\stm32f1xx_hal_cortex.o"
+"mco2\stm32f1xx_hal_pwr.o"
+"mco2\stm32f1xx_hal_flash.o"
+"mco2\stm32f1xx_hal_flash_ex.o"
+"mco2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "mco2\mco2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mco2.map" -o mco2\mco2.axf
